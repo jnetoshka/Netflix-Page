@@ -3,9 +3,15 @@
     margin:0
 }
 body{
-    background-color: black;
+    background-color:rgb(35, 35, 35, 1);
     font-family: 'Roboto', sans-serif;
     color: white;
+    /* border-top: 6px solid #333;
+    color:  */
+}
+.space{
+    background-color: black;
+    margin-bottom: 8px;
 }
 header{
     display: flex;
@@ -187,9 +193,7 @@ margin:auto;
 }
 footer{
     padding: 50px 15% 10px;
-    border-top: 6px solid #333;
-    color: rgb(35, 35, 35, 1);
-
+    background-color: black;
 }
 footer a{
     color: #b3b3b3;
