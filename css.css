@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin:0
+}
 body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
@@ -7,36 +11,48 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5rem ;
-    margin-left: 23rem;
-    margin-right: 23rem;
 }
 .container{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url("/pictures/background.jpg") ;
     height: 700px;
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
 }
 .container2{
-    padding: 200px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* margin-top: 100px; */
 }
-h1{
+.container2 h1{
     font-weight:900;
     font-size: 48px;
+    line-height: 70px;
+    white-space: nowrap;
+    padding-bottom: 15px;
+
 }
 h2{
     font-weight:900;
     font-size: 48px;
 }
-p{
+.container2  p{
     font-size: 1.5rem;
     font-weight: 400;
+    padding-bottom: 25px
 }
-h3{
+.container2  h3{
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.5;
+    padding-bottom: 5px
 }
-button{
+.btn1{
     border: none;
     border-radius: 0.1875rem ;
     color: white;
@@ -44,4 +60,99 @@ button{
     padding: 10px 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
+    cursor: pointer;
+}
+select{
+font-size: 16px;
+background-color: transparent;
+border-radius: 4px;
+padding:6px 36px;
+color:white;
+justify-content: center;
+align-items: center;
+margin-right: 20px;
+appearance: none;
+background: url(/pictures/arrow.svg) no-repeat calc(100% - 10px);
+z-index: 0;
+} 
+.language-logo{
+position: absolute;
+top:22px;
+padding-left: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.sign-in{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in input{
+    /* flex:1;
+    border:0;
+    outline: 0;
+    margin-left: 20px; */
+    border:1px solid rgb(94, 94, 94, 1);
+    border-radius: 4px;
+    background-color: rgba(122, 122, 122, 0.187);
+    color: white;
+    padding: 15px 16px 15px;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 5px;
+}
+input::-webkit-input-placeholder { 
+    color: rgb(185, 185, 185,1); 
+}
+:focus::-webkit-input-placeholder {
+    font-size: 13px;
+    transition: 0.3s;
+
+  }
+.sign-in button{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(229, 22, 20, 1);
+    padding: 10px 16px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.container3{
+    padding: 50px 12%;
+    font-size: 24px;
+    
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:50px 0;
+
+}
+.text-side{
+    flex-basis: 50%;
+    margin-bottom:20px;
+}
+.img-side{
+    flex-basis: 50%;
+    margin-bottom:20px;
+}
+.img-side img{
+display: block;
+width:90%;
+margin:auto;
+}
+.container3 h2{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
 }
