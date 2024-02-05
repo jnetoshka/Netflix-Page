@@ -26,7 +26,7 @@ header{
     padding-right: 45px;
 }
 .container{
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url("/pictures/background.jpg") ;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.821) 0, rgba(0, 0, 0, 0.358) 60%, rgba(0, 0, 0, 0.867) 100%), url("/pictures/background.jpg") ;
     height: 700px;
     text-align: center;
     background-size: cover;
@@ -40,7 +40,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    /* margin-top: 100px; */
+
 }
 .container2 h1{
     font-weight:900;
@@ -68,12 +68,15 @@ h2{
 .btn1{
     border: none;
     border-radius: 0.1875rem ;
-    color: white;
     background-color: rgba(229, 22, 20, 1);
     padding: 10px 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
     cursor: pointer;
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 select{
 font-size: 16px;
@@ -105,10 +108,6 @@ align-items: center;
     align-items: center;
 }
 .sign-in input{
-    /* flex:1;
-    border:0;
-    outline: 0;
-    margin-left: 20px; */
     border:1px solid rgb(94, 94, 94, 1);
     border-radius: 4px;
     background-color: rgba(28, 28, 28, 0.765);
@@ -128,6 +127,10 @@ input::-webkit-input-placeholder {
     transition: 0.3s;
 
   }
+.btnhover:hover{
+        background-color: rgb(182, 0, 9);
+        transition: 0.5s;
+}
 .sign-in button{
     font-size: 1.5rem;
     border: none;
@@ -238,3 +241,54 @@ footer .row{
     font-weight: 400;
     color: rgb(179, 179, 179,1);
 }
+.accordion{
+width:100%;
+text-align: start;
+padding-top: 10px;
+}
+.accordion .contentBx{
+    position: relative;
+    margin:10px 20px;
+}
+.accordion .contentBx .label{
+    position: relative;
+    padding: 30px 25px;
+    background:#2d2d2d;
+    cursor: pointer;
+    font-size: 24px;
+}
+.accordion .contentBx .label::before{
+    content:'+'; 
+    position: absolute;
+    top:50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 40px;
+}
+.accordion .contentBx.active .label::before{
+    content:'-';
+    font-size: 40px;
+
+}
+.accordion .contentBx .label:hover{
+    background:#3d3d3d;
+    transition: 0.5s;
+}
+.accordion .contentBx .content{
+    position:relative;
+    background:#2d2d2d;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-size: 24px;
+}
+.accordion .contentBx.active .content{
+    height: 170px;
+    padding: 30px 25px;
+
+}
+.accordionUp{
+    padding-top: 30px;
+}
+
